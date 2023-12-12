@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flights {
+    width: 60%;
+}
+.card {
+    text-align: center;
+    width: 20%;
+}
+.card .info {
+    width: 90%;
+}
