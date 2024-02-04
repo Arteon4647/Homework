@@ -1,27 +1,38 @@
-// Дано 
-const str1 = "Hello";
-// Зробіть останню літеру строки str1 великою, а першу - маленькою
+// Дано:
 
-// Дано 
-const str2 = "artem";
-// напишіть ваше їм'я з великої літери (регістр першої літери)
+function task1() {
+	const str1 = "String number one";
+	const str2 = "String number two";
 
-// Дано
-const n = 12.6436;
-// Залишіть 2 символи після коми, додайте символ $ на початок та кінець
+    const str1number = str1.length;
+    const str2number = str2.length;
 
-const str3 = "H!el*l000o";
-// Порахуйте кількість літер у str3 (саме літер)
+    if (str1number > str2number) {
+        console.log(str1);
+    } else {
+        console.log(str2);
+     }
 
-console.log(str1.slice(0, 1).toLowerCase(),str1.slice(1, 4),str1.slice(4).toUpperCase()); 
-// почему-то с пробелами 
-const h = str1.slice(0, 1).toLowerCase();
-const ell = str1.slice(1,4);
-const o = str1.slice (4).toUpperCase();
-console.log(h + ell + o);
+// виведіть найдовшу строку (if)
+}
 
-console.log(str2.replace("a", "A"));
+task1();
 
-console.log("$" + n.toFixed(2).concat("$"));
 
-console.log(str3.replaceAll("!", "").replaceAll("*", "").replaceAll("0", "").length);
+// Дано: 
+
+function task2() {
+	const str = "JavaScript";
+	const repeatTimes = 12; 
+
+    const repeatStr = str.repeat (12);
+    
+    if (repeatStr.length > 100) {
+        console.log(repeatStr);
+    }
+	
+// "Повторіть" (repeat) строку str [repeatTimes] разів. 
+// Виведіть її у консоль тільки якщо після repeat довжина строки стала більшою за 100
+}
+
+task2();
