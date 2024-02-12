@@ -1,11 +1,9 @@
-const message = "Hello";
-let times = 0;
 function repeat(message, times) {
   // опишіть функцію repeat так, щоб вона виводила message [times] разів (while)
-
-  while (times < 5) {
+let counter = 0;
+  while (counter < times) {
     console.log(message);
-    times = times + 1;
+    counter = counter + 1;
   }
   
 }
