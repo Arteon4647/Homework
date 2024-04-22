@@ -1,7 +1,7 @@
 const selectButtonsWrapper = document.getElementById("select-buttons-wrapper");
 
 const selectButtonsNumbers = [1, 2, 3];
-const selectedButtons = [];
+let selectedButtons = [];
 
 const selectButtons = selectButtonsNumbers.map((number) => {
   const selectBtn = document.createElement("button");
@@ -16,6 +16,12 @@ const selectButtons = selectButtonsNumbers.map((number) => {
 
       console.log(selectedButtons, "selectedButtons");
     } 
+
+if (event.shiftKey && selectedButtons.includes(number)) {
+  selectedButtons = selectedButtons.filter((n) => n !== number);
+  event.target.classList.remove("selected");
+}
+
     console.log(number);
   };
 
