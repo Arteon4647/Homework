@@ -196,11 +196,7 @@ class App {
     App.renderUsers(users);
   }
 
-  static searchUsers(query) {
-    // email or name
-    // HW!
-  }
-
+  static searchUsers(query) {}
   static changeUser() {}
 
   static renderUsers(usersToRender = [], parent = usersWrapper) {
