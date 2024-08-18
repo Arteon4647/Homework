@@ -1,0 +1,1 @@
+alert(`Post number is: ${document.title} `)
